@@ -53,6 +53,7 @@
 - Ready queue : 현재 메모리 내에 있으면서 CPU를 잡아서 실행되기를 기다리는 프로세스의 집합이다.
 - Device queues : I/O device의 처리를 기다리는 프로세스의 집합이다.
 - ***프로세스들은 각 큐들을 오가며 수행된다.***
+
 ![image](https://user-images.githubusercontent.com/94590894/187193123-31a720e6-b106-48e7-b960-bd7d670b2ff2.png)
 
 ---
@@ -62,6 +63,7 @@
   - 프로세스에 memory 및 각종 자원을 주는 문제를 담당한다.
   - 동시에 몇 개의 프로그램을 수행할 지 제어한다.(degree of Multiprogramming을 제어)
   - Time Sharing System에는 보통 장기 스케줄러가 없다.(현대 운영체제에 사용되지 않는다. 하드웨어 발전으로 무조건 ready 상태로 올리는 것이 가능해졌다.)
+  
    ![image](https://user-images.githubusercontent.com/94590894/187194220-c29d6fdd-2731-4345-8282-e935005eb117.png)
   - new 상태에서 ready 상태로 바꾸는 과정에서 admitted 해주는 역할을 한다.
 
@@ -94,6 +96,7 @@
 - 스레드 구성
   - 스레드는 고유한 스레드 ID, Program counter, register set, stack을 가진다.
   - 스레드 간에 code와 data, file을 공유한다.
+ 
     ![image](https://user-images.githubusercontent.com/94590894/187418774-723e8da8-300c-4359-b63e-c0f346609789.png)
 - 스레드 분류
   1. 사용자 수준의 스레드
