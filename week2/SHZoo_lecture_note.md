@@ -11,8 +11,8 @@
 프로세스의 현재 상태를 나타내는데 필요한 모든 요소
 시분할 시스템에서 특정 프로세스가 어디까지 실행되었는지 알 수 있게 해줌
 - CPU와 관련된 하드웨어 문맥
-    -Program Counter가 어떠한 것을 가르키고 있는지
-    -각종 Resister가 어떤 값을 갖고 있는지
+    - Program Counter가 어떠한 것을 가르키고 있는지
+    - 각종 Resister가 어떤 값을 갖고 있는지
 - 프로세스의 주소 공간
     - code, data, stack
 - 프로세스 관련 커널 자료 구조
@@ -25,13 +25,14 @@
 
 **구성 요소**
 ![SC1](https://user-images.githubusercontent.com/107851434/187787310-c5fb7ac7-540b-43c9-a2de-4a43a76dd953.png)
-    - pointer : 현재 프로세스가 위치한 주소
-    - process state : suspended, running, ready, blocked 등 프로세스의 상태
-    - process number : 프로세스 식별자라고도 하며 프로세스를 구별하기 위해 부여된 고유 번호로 주로 정수값
-    - program counter : 다음에 실행할 명령어(프로세스)에 대한 주기억장치상의 주소
-    - resisters : 각종 CPU 레지스터 정보
-    - 메모리 관련 : 해당 프로세스가 주기억장치의 어느 영역에 위치해 있는지를 저장
-    - 파일 관련 : 프로세스 실행을 위해 사용하고 있는 입출력 요구사항이나 입출력 장치, 개방된 파일 목록 등
+- pointer : 현재 프로세스가 위치한 주소
+- process state : suspended, running, ready, blocked 등 프로세스의 상태
+- process number : 프로세스 식별자라고도 하며 프로세스를 구별하기 위해 부여된 고유 번호로 주로 정수값
+- program counter : 다음에 실행할 명령어(프로세스)에 대한 주기억장치상의 주소
+- resisters : 각종 CPU 레지스터 정보
+- 메모리 관련 : 해당 프로세스가 주기억장치의 어느 영역에 위치해 있는지를 저장
+- 파일 관련 : 프로세스 실행을 위해 사용하고 있는 입출력 요구사항이나 입출력 장치, 개방된 파일 목록 등
+
 ## 프로세스 상태(Process State)
 
 프로세스는 시스템 내에 존재하며 처리되기 위해 여러 가지의 사건을 통하며 상태를 변화시킨 후 종료된다.
@@ -69,8 +70,10 @@
 - Time Interrupt 또는 I/O 처리, 프로세스 완료 등의 이유로 CPU를 다른 프로세스로 넘겨주는 과정
 
 **문맥 교환의 과정**
-    - CPU의 처리를 받고 있는 프로세스의 상태를 그 프로세스의 PCB에 저장
-    - CPU를 새롭게 얻는 프로세스의 상태를 PCB에서 읽어옴
+
+- CPU의 처리를 받고 있는 프로세스의 상태를 그 프로세스의 PCB에 저장
+- CPU를 새롭게 얻는 프로세스의 상태를 PCB에서 읽어옴
+
 ## CPU 스케줄링 3단계
 
 ![SC3](https://user-images.githubusercontent.com/107851434/187790024-ff957f3c-c206-4fbc-a91c-8861e812f031.png)
