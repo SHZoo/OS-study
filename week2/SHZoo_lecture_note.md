@@ -2,10 +2,10 @@
 
 ## 프로세스의 정의
 
--프로그램 중 실행하는 부분, 즉 실행하고 있는 프로그램
--운영체제가 관리하는 최소단위의 작업
--CPU에 의해서 현재 실행되고 있는 프로그램
--PCB(Process Control Block)를 지닌 프로그램
+- 프로그램 중 실행하는 부분, 즉 실행하고 있는 프로그램
+- 운영체제가 관리하는 최소단위의 작업
+- CPU에 의해서 현재 실행되고 있는 프로그램
+- PCB(Process Control Block)를 지닌 프로그램
 ## 프로세스의 문맥(Process Context)
 
 프로세스의 현재 상태를 나타내는데 필요한 모든 요소
@@ -22,6 +22,7 @@
 
 - 운영체제가 각 프로세스를 관리하기 위해, 프로세스에 대한 정보를 지니고 있는 테이블
 - 운영체제가 프로세스를 표현한 것으로, 운영체제의 커널부분에 있음
+
 **구성 요소**
 ![SC1](https://user-images.githubusercontent.com/107851434/187787310-c5fb7ac7-540b-43c9-a2de-4a43a76dd953.png)
     - pointer : 현재 프로세스가 위치한 주소
@@ -63,10 +64,10 @@
 | Wake-up | Blocked => Ready  |
 
 
-- Dispatch 
 ## 문맥 교환(Context Switching)
 
 - Time Interrupt 또는 I/O 처리, 프로세스 완료 등의 이유로 CPU를 다른 프로세스로 넘겨주는 과정
+
 **문맥 교환의 과정**
     - CPU의 처리를 받고 있는 프로세스의 상태를 그 프로세스의 PCB에 저장
     - CPU를 새롭게 얻는 프로세스의 상태를 PCB에서 읽어옴
@@ -206,5 +207,5 @@ CPU bound job : CPU를 많이 쓰는 작업
 - CPU 제어권을 CPU Scheduler에 의해 선택된 프로세스에게 넘긴다.
 
 **Preemptive** vs **Nonpreemptive**
-Preemptive : 프로세스가 사용 중인 CPU를 강제롤 뺏음(ex: time interrupt에 의한 반납)
-Nonpreemptive : 프로세스가 자진해서 CPU를 내려 놓음(ex: 프로세스 종류, I/O명령)
+- Preemptive : 프로세스가 사용 중인 CPU를 강제롤 뺏음(ex: time interrupt에 의한 반납)
+- Nonpreemptive : 프로세스가 자진해서 CPU를 내려 놓음(ex: 프로세스 종류, I/O명령)
