@@ -40,7 +40,7 @@
 |:------:|:---:|:---:|:---:|
 |08.25|[1주차 퀴즈](https://forms.gle/X6e99SgU2FLjvaA26)|[1주차 퀴즈](https://forms.gle/Tdod6DUYXyW6ncuB7)|인터럽 발생 경우와 캐시메모리 조사, 4강 다시 듣기|
 |09.01|[2주차 퀴즈](https://forms.gle/9AwiEUFCEX3BzF3s5)|[2주차 퀴즈](https://forms.gle/kaT8dyKEjyA8vKVb9)|
-|09.08|||
+|09.08||[3주차 퀴즈](https://forms.gle/Dku4uockSf9BFzJx6)|
 
 ## 강의 목차
 Chapter 1
